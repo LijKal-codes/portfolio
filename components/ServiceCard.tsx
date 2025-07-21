@@ -7,10 +7,11 @@ interface ServiceCardProps {
   icon: LucideIcon
   title: string
   description: string
+  features: string[]
   index: number
 }
 
-export default function ServiceCard({ icon: Icon, title, description, index }: ServiceCardProps) {
+export default function ServiceCard({ icon: Icon, title, description, features, index }: ServiceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -50,6 +51,19 @@ export default function ServiceCard({ icon: Icon, title, description, index }: S
                 {description}
               </p>
             </div>
+          </div>
+
+          {/* Features list */}
+          <div className="space-y-2">
+            <h4 className="text-sm font-semibold text-primary-400">Key Features</h4>
+            <ul className="space-y-1">
+              {features.slice(0, 3).map((feature, idx) => (
+                <li key={idx} className="flex items-start space-x-2 text-sm text-gray-300">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Hover indicator */}
