@@ -184,8 +184,8 @@ export default function Hero() {
               </Link>
               
               <a
-                href="/Kalabe_Mulugeta_CV_2025.pdf"
-                download="Kalabe_Mulugeta_CV_2025.pdf"
+                href="/Kalabe_Mulugeta_CV_2025_latest.pdf"
+                download="Kalabe_Mulugeta_CV_2025_latest.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary flex items-center justify-center space-x-2 group"

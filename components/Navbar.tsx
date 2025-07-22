@@ -84,8 +84,8 @@ export default function Navbar() {
               {theme === 'light' ? <Moon size={20} className="text-primary-400" /> : <Sun size={20} className="text-primary-400" />}
             </motion.button>
             <a
-              href="/Kalabe_Mulugeta_CV_2025.pdf"
-              download="Kalabe_Mulugeta_CV_2025.pdf"
+              href="/Kalabe_Mulugeta_CV_2025_latest.pdf"
+              download="Kalabe_Mulugeta_CV_2025_latest.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center space-x-2 group"
@@ -147,8 +147,8 @@ export default function Navbar() {
                 </Link>
               ))}
               <a
-                href="/Kalabe_Mulugeta_CV_2025.pdf"
-                download="Kalabe_Mulugeta_CV_2025.pdf"
+                href="/Kalabe_Mulugeta_CV_2025_latest.pdf"
+                download="Kalabe_Mulugeta_CV_2025_latest.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
