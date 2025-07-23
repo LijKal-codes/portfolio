@@ -229,7 +229,7 @@ export default function About() {
               <p>
                 Experienced Tech professional with a master's degree in computer science. Proficient in data analytics, 
                 visualization, and BI software, particularly Power BI and Tableau. Over 14+ years of hands-on experience 
-                in data collection, analysis, and visualization, including 2+ years work in humanitarian and development programs. 
+                in data collection, analysis, and visualization, including 3+ years work in humanitarian and development programs. 
                 Skilled in digital data collection tools and data management software. Strong interpersonal, organizational, 
                 and communication skills, committed to teamwork and data security.
               </p>
