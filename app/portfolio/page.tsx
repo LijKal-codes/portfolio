@@ -166,10 +166,9 @@ export default function Portfolio() {
     : projects.filter(project => project.category === activeFilter)
 
   const stats = [
-    { label: 'Projects Completed', value: '50+' },
+    { label: 'Projects Completed', value: '30+' },
     { label: 'Years Experience', value: '14+' },
-    { label: 'Countries Served', value: '15+' },
-    { label: 'Team Members Led', value: '20+' },
+    { label: 'Team Members Led', value: '30+' },
   ]
 
   return (
