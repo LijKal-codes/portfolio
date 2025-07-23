@@ -5,136 +5,136 @@ import Link from 'next/link'
 export default function Home() {
   const stats = [
     { label: 'Program Effectiveness', value: '25-30%' },
-    { label: 'Analytics Adoption', value: '40%' },
+    { label: 'KPI Improvement', value: '25%' },
     { label: 'Agricultural Yield', value: '40%' },
-    { label: 'Farmer Income', value: '25%' },
-    { label: 'Data Security', value: '30%' },
+    { label: 'Program Engagement', value: '25%' },
+    { label: 'Operational Efficiency', value: '20-30%' },
   ]
 
   const highlights = [
     {
       icon: BarChart3,
       title: 'Business Intelligence & Analytics',
-      description: 'Power BI, Tableau, Excel dashboards driving 25-30% gains in program effectiveness across 10+ programs.',
+      description: 'Power BI, Tableau, Metabase dashboards driving 25% increase in KPIs and real-time monitoring.',
     },
     {
       icon: Map,
       title: 'Geospatial & Remote Sensing',
-      description: 'QGIS, ArcGIS, and spatial analytics for location-based insights and agricultural applications.',
+      description: 'QGIS, ArcGIS, satellite imagery processing for climate resilience and sustainable development.',
     },
     {
       icon: Bot,
       title: 'AI & Machine Learning',
-      description: 'Python, R, Stata for ML models improving agricultural yield by 40% and plant disease detection.',
+      description: 'Python, R, regression, clustering, time-series forecasting for predictive analytics.',
     },
     {
       icon: Zap,
-      title: 'Data Governance & Compliance',
-      description: 'GDPR/PII compliance frameworks, ETL processes, and data modeling with 30% security improvements.',
+      title: 'Data Infrastructure & ETL',
+      description: 'Advanced SQL, dbt-style data modeling, cloud-based data management systems.',
     },
     {
       icon: Database,
       title: 'MEL Systems & Platforms',
-      description: 'SurveyCTO, Kobo, DHIS2 integration with cross-functional dashboards and real-time insights.',
+      description: 'Data validation workflows, production-level data modeling, stakeholder engagement.',
     },
     {
       icon: Users,
-      title: 'Team Leadership & Capacity Building',
-      description: 'Leading cross-functional data teams, mentoring 20+ staff, and 40% improvement in analytics adoption.',
+      title: 'Strategic Leadership',
+      description: 'Leading cross-functional teams, capacity building, and data-driven solutions.',
     },
     {
       icon: TrendingUp,
-      title: 'Strategic Planning & KPIs',
-      description: 'Balanced Scorecard implementation, scenario planning, and evidence-based impact reporting.',
+      title: 'Predictive Analytics',
+      description: 'Agriculture, climate, and environmental forecasting with scenario analysis.',
     },
     {
       icon: Award,
-      title: 'Digital Finance & Fintech',
-      description: 'Fintech tracking systems enhancing farmer income by 25% and sustainable market access.',
+      title: 'Digital Finance Solutions',
+      description: 'Analyzed digital finance applications increasing farmer income by 25%.',
     },
     {
       icon: Database,
-      title: 'Enterprise Data Systems',
-      description: 'End-to-end MEL frameworks, stakeholder engagement, and multi-country program support.',
+      title: 'Cloud & Data Infrastructure',
+      description: 'Microsoft Azure, cloud-based data management, database design and administration.',
     },
   ]
 
   const coreSkills = [
     {
       icon: BarChart3,
-      title: 'Data Analysis',
-      description: 'Skilled in transforming raw data into actionable insights using statistical methods, exploratory data analysis, and data visualization. Experienced in using tools like Python, R, and SQL to uncover trends, anomalies, and support data-driven decision making across diverse sectors.',
+      title: 'Advanced Data Analysis',
+      description: 'Expert in Python (Pandas, NumPy), R, Excel automation with advanced SQL skills including joins, CTEs, and window functions. Skilled in dbt-style data modeling from staging to analytics to production.',
     },
     {
       icon: TrendingUp,
-      title: 'Business Intelligence',
-      description: 'Expertise in designing and deploying interactive dashboards and reports with platforms such as Power BI, Tableau, and Excel. Enables organizations to monitor key performance indicators (KPIs), optimize operations, and align strategies through real-time data visualization and automated reporting.',
-    },
-    {
-      icon: FileText,
-      title: 'Data Collection Tools (KOBO, CSPro, ODK)',
-      description: 'Proficient in deploying and managing digital data collection platforms including KOBO Toolbox, CSPro, and Open Data Kit (ODK). Skilled at designing survey forms, managing field data capture, and ensuring data quality for monitoring, evaluation, and research projects.',
-    },
-    {
-      icon: Code,
-      title: 'Custom Software Development',
-      description: 'Experienced in developing tailored software solutions that automate workflows, integrate systems, and address specific organizational challenges. Skilled with backend technologies (Node.js, Django), frontend frameworks (React, Next.js), and API design for scalable and maintainable applications.',
+      title: 'Business Intelligence & Visualization',
+      description: 'Proficient in Power BI, Tableau, and Metabase for creating interactive dashboards and real-time monitoring systems. Experienced in data validation workflows and production-level data modeling.',
     },
     {
       icon: Map,
-      title: 'Geospatial Analysis',
-      description: 'Proficient in leveraging GIS tools like QGIS, ArcGIS, and PostGIS for spatial data analysis and visualization. Applies geospatial techniques to support land use planning, resource management, and impact assessment through mapping, spatial modeling, and remote sensing integration.',
+      title: 'Geospatial & Remote Sensing',
+      description: 'Advanced skills in QGIS, ArcGIS, satellite imagery processing for climate resilience and sustainable development applications. Experienced in spatial analysis and environmental forecasting.',
     },
     {
       icon: Bot,
-      title: 'AI & Machine Learning',
-      description: 'Advanced expertise in machine learning algorithms, predictive modeling, and AI applications for agricultural and business contexts. Skilled in developing ML models that improve yield by 40%, detect plant diseases, and provide intelligent decision support systems.',
+      title: 'Machine Learning & Predictive Analytics',
+      description: 'Expertise in regression, clustering, time-series forecasting for agriculture, climate, and environmental applications. Skilled in developing AI-enabled solutions for strategic decision-making.',
+    },
+    {
+      icon: Database,
+      title: 'Cloud & Data Infrastructure',
+      description: 'Proficient in Microsoft Azure, cloud-based data management systems, database design and administration. Experienced in ETL frameworks and data quality assurance workflows.',
+    },
+    {
+      icon: Users,
+      title: 'Strategic Leadership & MEAL',
+      description: 'Strong understanding of Monitoring and Evaluation frameworks, stakeholder engagement, and capacity building. Experienced in leading cross-functional teams and data-driven solutions.',
     },
   ]
 
   const projects = [
     {
-      title: 'MOYESH Program - Cross-Functional MEL System',
-      techStack: ['Power BI', 'Tableau', 'Python', 'SQL', 'SurveyCTO', 'Kobo'],
-      description: 'Led the integration of MEL and BI systems for 10+ programs, designing Power BI/Tableau dashboards that drove 25-30% gains in program effectiveness. **My role** included architecting data pipelines, building cross-functional dashboards, and implementing real-time monitoring solutions that improved reporting efficiency by 30%.',
-      impact: '30% Efficiency Gain',
-      category: 'MEL Systems',
+      title: 'MOYESH Program - Data Management Platform',
+      techStack: ['Power BI', 'Tableau', 'Advanced SQL', 'Python', 'Data Modeling'],
+      description: 'Created and sustained complex data models facilitating strategic decision-making. Developed interactive dashboards with Power BI and Tableau providing real-time monitoring, contributing to 25% increase in KPIs. Managed scalable Data Management strategy enhancing data availability to 116,000+ youth and 11,000+ businesses.',
+      impact: '25% KPI Increase',
+      category: 'Data Management',
       demoLink: '#',
       codeLink: '#'
     },
     {
-      title: 'AI FARMS - Climate-Smart Agriculture Platform',
-      techStack: ['Python', 'TensorFlow', 'React', 'Node.js', 'PostgreSQL', 'QGIS'],
-      description: 'Directed AI-driven platform development supporting climate-smart agriculture with ML models improving agricultural yield by 40%. **My role** as Founder & Technical Director included designing scalable data systems, developing plant disease detection algorithms, and creating sustainable market access solutions.',
-      impact: '40% Yield Improvement',
+      title: 'AI FARMS - Award-Winning Agri-Tech Platform',
+      techStack: ['Python', 'Machine Learning', 'AI', 'Climate Analytics', 'Predictive Modeling'],
+      description: 'Headed creation of award-winning Agri-tech platform promoting stakeholders across supply chains through AI-enabled climate-smart farming. Designed solutions for market clarity, resource utilization, and sustainable agricultural practices. Won UNDP and LG-KOICA competition with $5,000 grant.',
+      impact: '40% Crop Yield',
       category: 'AI/ML',
       demoLink: '#',
       codeLink: '#'
     },
     {
-      title: 'WEYE Platform - Youth Engagement & Task Marketplace',
-      techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Firebase', 'Next.js', 'REST APIs'],
-      description: 'Developed comprehensive digital platform connecting youth for peer-to-peer service exchange with secure wallet-based commission system. **My role** as Platform Developer included building React Native mobile app, Node.js backend, PostgreSQL database, Firebase integration, and Next.js admin panel for task posting, applications, and commission management.',
-      impact: 'Youth Employment',
-      category: 'Digital Platform',
+      title: 'MaYEA Program - National Apiculture Database',
+      techStack: ['Database Design', 'SQL', 'Data Modeling', 'Stakeholder Management'],
+      description: 'Leading development of National Apiculture Database for the MaYEA Programme. Managing comprehensive data systems for apiculture sector with stakeholder engagement and data validation workflows.',
+      impact: 'National Database',
+      category: 'Database Systems',
       demoLink: '#',
       codeLink: '#'
     },
     {
-      title: 'KPI Tracking & Balanced Scorecard System',
-      techStack: ['Power BI', 'Excel', 'SQL', 'Dashboard Development', 'KPI Framework'],
-      description: 'Integrated KPI tracking systems into institutional dashboards improving operational metrics by 30%. **My role** as Head of ICT included developing digital platforms aligned with Balanced Scorecard framework, leading cross-departmental M&E initiatives, and mentoring 20+ data staff.',
-      impact: '30% Operational Improvement',
-      category: 'Enterprise',
+      title: 'AI in Ethiopia Study - National Analysis',
+      techStack: ['Research Analysis', 'Strategic Planning', 'Policy Development'],
+      description: 'Produced in-depth analysis of Ethiopia\'s AI ecosystem, influencing national AI development strategies. Conducted scenario planning and strategic forecasts for AI adoption in Ethiopia, developing 45-page national analysis.',
+      impact: 'Policy Influence',
+      category: 'Strategic Analysis',
       demoLink: '#',
       codeLink: '#'
     },
     {
-      title: 'Student Outcome Tracking Dashboard',
-      techStack: ['Power BI', 'Excel', 'SQL', 'Data Visualization', 'Performance Analytics'],
-      description: 'Developed comprehensive student outcome tracking dashboards increasing performance visibility by 25%. **My role** as Instructor & Systems Developer included creating data-driven educational improvements, implementing performance tracking systems, and supporting institutional learning through analytics.',
-      impact: '25% Performance Visibility',
-      category: 'Education',
+      title: 'Digital Finance for Ethiopian Beekeepers',
+      techStack: ['Financial Analytics', 'Data Analysis', 'Stakeholder Research'],
+      description: 'Analyzed digital finance applications for Ethiopian beekeepers, increasing farmer income by 25%. Provided comprehensive analysis of digital finance solutions and their impact on agricultural communities.',
+      impact: '25% Income Increase',
+      category: 'Financial Analytics',
       demoLink: '#',
       codeLink: '#'
     }

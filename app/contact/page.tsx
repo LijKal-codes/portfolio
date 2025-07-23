@@ -13,7 +13,8 @@ import {
   Database,
   Users,
   TrendingUp,
-  Award
+  Award,
+  Zap
 } from 'lucide-react'
 import { useState } from 'react'
 
@@ -25,11 +26,35 @@ export default function Contact() {
     service: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+    
+    try {
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      
+      // Here you would typically send the data to your backend
+      console.log('Form submitted:', formData)
+      
+      setSubmitStatus('success')
+      setFormData({
+        name: '',
+        email: '',
+        organization: '',
+        service: '',
+        message: ''
+      })
+    } catch (error) {
+      setSubmitStatus('error')
+      console.error('Form submission error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -76,42 +101,42 @@ export default function Contact() {
     {
       icon: BarChart3,
       title: 'Business Intelligence & Analytics',
-      description: 'Power BI, Tableau, Excel dashboards driving 25-30% gains in program effectiveness.'
+      description: 'Power BI, Tableau, Metabase dashboards driving 25% increase in KPIs and real-time monitoring.'
     },
     {
       icon: Map,
       title: 'Geospatial & Remote Sensing',
-      description: 'QGIS, ArcGIS, spatial analytics for agricultural and location-based insights.'
+      description: 'QGIS, ArcGIS, satellite imagery processing for climate resilience and sustainable development.'
     },
     {
       icon: Bot,
       title: 'AI & Machine Learning',
-      description: 'Python, R, Stata for ML models improving agricultural yield by 40%.'
+      description: 'Python (Pandas, NumPy), R, regression, clustering, time-series forecasting for predictive analytics.'
+    },
+    {
+      icon: Zap,
+      title: 'Data Infrastructure & ETL',
+      description: 'Advanced SQL, dbt-style data modeling, cloud-based data management systems with Microsoft Azure.'
     },
     {
       icon: Database,
       title: 'MEL Systems & Platforms',
-      description: 'SurveyCTO, Kobo, DHIS2 integration with cross-functional dashboards.'
+      description: 'Data validation workflows, production-level data modeling, stakeholder engagement.'
     },
     {
       icon: Users,
-      title: 'Team Leadership & Capacity Building',
-      description: 'Leading cross-functional data teams, mentoring 20+ staff with 40% improvement.'
+      title: 'Strategic Leadership',
+      description: 'Leading cross-functional teams, capacity building, and data-driven solutions.'
     },
     {
       icon: TrendingUp,
-      title: 'Strategic Planning & KPIs',
-      description: 'Balanced Scorecard implementation, scenario planning, and impact reporting.'
+      title: 'Predictive Analytics',
+      description: 'Agriculture, climate, and environmental forecasting with scenario analysis.'
     },
     {
       icon: Award,
-      title: 'Digital Finance & Fintech',
-      description: 'Fintech tracking systems enhancing farmer income by 25%.'
-    },
-    {
-      icon: Award,
-      title: 'Agri-Tech Solutions',
-      description: 'AI Farms, WEYE, LESUA, and FAST PARK projects driving agricultural innovation.'
+      title: 'Digital Finance Solutions',
+      description: 'Analysis of digital finance applications increasing farmer income by 25%.'
     }
   ]
 
@@ -119,13 +144,13 @@ export default function Contact() {
     'Business Intelligence & Analytics',
     'Geospatial & Remote Sensing',
     'AI & Machine Learning',
-    'Data Governance & Compliance',
+    'Data Infrastructure & ETL',
     'MEL Systems & Platforms',
-    'Team Leadership & Capacity Building',
-    'Strategic Planning & KPIs',
-    'Digital Finance & Fintech',
-    'Enterprise Data Systems',
-    'Agri-Tech Solutions',
+    'Strategic Leadership & Capacity Building',
+    'Predictive Analytics & Forecasting',
+    'Digital Finance Solutions',
+    'Cloud & Data Infrastructure',
+    'Database Design & Administration',
     'Training & Capacity Building',
     'Consulting & Advisory',
     'Investment Opportunities',
@@ -233,7 +258,11 @@ export default function Contact() {
             <div className="card">
               <h2 className="text-2xl font-bold text-white mb-6">Send a Message</h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-6"
+                id="contact-form"
+              >
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -321,12 +350,68 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full btn-primary flex items-center justify-center space-x-2 group"
+                  disabled={isSubmitting}
+                  className="w-full btn-primary flex items-center justify-center space-x-2 group disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send size={20} />
-                  <span>Send Message</span>
+                  {isSubmitting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                      <span>Sending...</span>
+                    </>
+                  ) : submitStatus === 'success' ? (
+                    <>
+                      <div className="text-green-400">✓</div>
+                      <span>Message Sent!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={20} />
+                      <span>Send Message</span>
+                    </>
+                  )}
                 </button>
+                
+                {submitStatus === 'success' && (
+                  <div className="mt-4 p-4 glass border border-green-500/30 rounded-lg text-green-400 text-center">
+                    Thank you! Your message has been sent successfully. I'll get back to you soon.
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mt-4 p-4 glass border border-red-500/30 rounded-lg text-red-400 text-center">
+                    Sorry, there was an error sending your message. Please try again or contact me directly.
+                  </div>
+                )}
               </form>
+
+              {/* Service Interest Categories */}
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white mb-4 text-center">
+                  Service Interest Categories
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {serviceOptions.slice(0, 12).map((service, index) => (
+                    <div
+                      key={service}
+                      className="glass border border-primary-500/30 rounded-lg p-3 text-center hover:border-primary-400 hover:bg-primary-500/10 transition-all duration-300 cursor-pointer group"
+                      onClick={() => {
+                        setFormData(prev => ({ ...prev, service }));
+                        // Scroll to form
+                        document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      <div className="text-xs font-medium text-primary-400 group-hover:text-primary-300 transition-colors duration-300">
+                        {service}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-center mt-4">
+                  <p className="text-sm text-gray-400">
+                    Click on any category above to pre-select it in the form
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

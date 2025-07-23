@@ -21,7 +21,7 @@ export default function Services() {
     {
       icon: BarChart3,
       title: 'Business Intelligence & Analytics',
-      description: 'Power BI, Tableau, and Excel dashboard development driving 25-30% gains in program effectiveness. Real-time insights and KPI tracking for data-driven decision making.',
+      description: 'Power BI, Tableau, Metabase dashboard development driving 25% increase in KPIs. Real-time monitoring and performance tracking for data-driven decision making.',
       features: [
         'Custom dashboard development',
         'Real-time KPI monitoring',
@@ -34,12 +34,12 @@ export default function Services() {
     {
       icon: Map,
       title: 'Geospatial & Remote Sensing',
-      description: 'QGIS, ArcGIS, and spatial analytics for location-based insights and agricultural applications. Spatial data integration and mapping solutions.',
+      description: 'QGIS, ArcGIS, satellite imagery processing for climate resilience and sustainable development. Spatial data integration and mapping solutions.',
       features: [
         'Spatial data analysis',
         'Remote sensing applications',
-        'Agricultural mapping',
-        'Resource distribution analysis',
+        'Satellite imagery processing',
+        'Climate resilience mapping',
         'GIS platform integration'
       ],
       category: 'Spatial'
@@ -47,11 +47,11 @@ export default function Services() {
     {
       icon: Bot,
       title: 'AI & Machine Learning',
-      description: 'Python, R, Stata for ML models improving agricultural yield by 40%. Plant disease detection and predictive analytics for sustainable agriculture.',
+      description: 'Python (Pandas, NumPy), R, regression, clustering, time-series forecasting for predictive analytics in agriculture and climate applications.',
       features: [
         'Predictive modeling',
-        'Plant disease detection',
-        'Yield optimization',
+        'Regression & clustering analysis',
+        'Time-series forecasting',
         'Climate-smart agriculture',
         'AI-powered decision support'
       ],
@@ -59,81 +59,68 @@ export default function Services() {
     },
     {
       icon: Zap,
-      title: 'Data Governance & Compliance',
-      description: 'GDPR/PII compliance frameworks, ETL processes, and data modeling with 30% security improvements. Enterprise data governance and privacy protection.',
+      title: 'Data Infrastructure & ETL',
+      description: 'Advanced SQL (joins, CTEs, window functions), dbt-style data modeling, cloud-based data management systems with Microsoft Azure.',
       features: [
-        'Data privacy compliance',
+        'Advanced SQL development',
+        'dbt-style data modeling',
+        'Cloud-based data management',
         'ETL pipeline development',
-        'Data modeling & architecture',
-        'Security framework implementation',
-        'Audit trail management'
+        'Database design & administration'
       ],
-      category: 'Governance'
+      category: 'Infrastructure'
     },
     {
       icon: Database,
       title: 'MEL Systems & Platforms',
-      description: 'SurveyCTO, Kobo, DHIS2 integration with cross-functional dashboards and real-time insights. End-to-end monitoring and evaluation systems.',
+      description: 'Data validation workflows, production-level data modeling, stakeholder engagement for monitoring and evaluation systems.',
       features: [
-        'MEL system design',
-        'Data collection platforms',
-        'Real-time monitoring',
-        'Impact assessment',
-        'Stakeholder reporting'
+        'MEL framework development',
+        'Data validation workflows',
+        'Production-level data modeling',
+        'Stakeholder engagement',
+        'Impact assessment'
       ],
       category: 'MEL'
     },
     {
       icon: Users,
-      title: 'Team Leadership & Capacity Building',
-      description: 'Leading cross-functional data teams, mentoring 20+ staff, and 40% improvement in analytics adoption. Training and knowledge transfer programs.',
+      title: 'Strategic Leadership & Capacity Building',
+      description: 'Leading cross-functional teams, capacity building, and data-driven solutions with strong understanding of MEAL frameworks.',
       features: [
-        'Team leadership & mentoring',
+        'Strategic leadership',
         'Capacity building workshops',
         'Technical training delivery',
-        'Change management',
-        'Institutional learning'
+        'Cross-functional team management',
+        'MEAL framework implementation'
       ],
       category: 'Leadership'
     },
     {
       icon: TrendingUp,
-      title: 'Strategic Planning & KPIs',
-      description: 'Balanced Scorecard implementation, scenario planning, and evidence-based impact reporting. Strategic alignment and performance measurement.',
+      title: 'Predictive Analytics & Forecasting',
+      description: 'Agriculture, climate, and environmental forecasting with scenario analysis and decision support systems.',
       features: [
-        'Strategic planning',
-        'KPI framework design',
+        'Agricultural forecasting',
+        'Climate modeling',
+        'Environmental analysis',
         'Scenario analysis',
-        'Impact measurement',
-        'Performance optimization'
+        'Decision support systems'
       ],
-      category: 'Strategy'
+      category: 'Analytics'
     },
     {
       icon: Award,
-      title: 'Digital Finance & Fintech',
-      description: 'Fintech tracking systems enhancing farmer income by 25% and sustainable market access. Digital payment and financial inclusion solutions.',
+      title: 'Digital Finance Solutions',
+      description: 'Analysis of digital finance applications for agricultural communities, increasing farmer income by 25%.',
       features: [
-        'Digital payment systems',
-        'Financial inclusion',
-        'Market access platforms',
-        'Income tracking',
-        'Sustainable finance'
+        'Digital finance analysis',
+        'Agricultural finance',
+        'Income optimization',
+        'Market access solutions',
+        'Financial inclusion'
       ],
-      category: 'Fintech'
-    },
-    {
-      icon: Globe,
-      title: 'Enterprise Data Systems',
-      description: 'End-to-end MEL frameworks, stakeholder engagement, and multi-country program support. Scalable enterprise solutions for global impact.',
-      features: [
-        'Enterprise architecture',
-        'Multi-country support',
-        'Stakeholder engagement',
-        'Scalable solutions',
-        'Global program management'
-      ],
-      category: 'Enterprise'
+      category: 'Finance'
     }
   ]
 

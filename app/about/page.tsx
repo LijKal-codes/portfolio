@@ -26,68 +26,63 @@ export default function About() {
     {
       icon: BarChart3,
       title: 'Business Intelligence & Analytics',
-      description: 'Power BI, Tableau, Excel dashboards driving 25-30% gains in program effectiveness.',
+      description: 'Power BI, Tableau, Metabase dashboards driving 25% increase in KPIs and real-time monitoring.',
     },
     {
       icon: Map,
       title: 'Geospatial & Remote Sensing',
-      description: 'QGIS, ArcGIS, spatial analytics for location-based insights and agricultural applications.',
+      description: 'QGIS, ArcGIS, satellite imagery processing for climate resilience and sustainable development.',
     },
     {
       icon: Bot,
       title: 'AI & Machine Learning',
-      description: 'Python, R, Stata for ML models improving agricultural yield by 40%.',
+      description: 'Python (Pandas, NumPy), R, regression, clustering, time-series forecasting for predictive analytics.',
     },
     {
       icon: Zap,
-      title: 'Data Governance & Compliance',
-      description: 'GDPR/PII compliance frameworks, ETL processes, and data modeling.',
+      title: 'Data Infrastructure & ETL',
+      description: 'Advanced SQL (joins, CTEs, window functions), dbt-style data modeling, cloud-based systems.',
     },
     {
       icon: Database,
       title: 'MEL Systems & Platforms',
-      description: 'SurveyCTO, Kobo, DHIS2 integration with cross-functional dashboards.',
+      description: 'Data validation workflows, production-level data modeling, stakeholder engagement.',
     },
     {
       icon: Users,
-      title: 'Team Leadership & Capacity Building',
-      description: 'Leading cross-functional data teams, mentoring 20+ staff.',
+      title: 'Strategic Leadership',
+      description: 'Leading cross-functional teams, capacity building, and data-driven solutions.',
     },
     {
       icon: TrendingUp,
-      title: 'Strategic Planning & KPIs',
-      description: 'Balanced Scorecard implementation, scenario planning, and impact reporting.',
+      title: 'Predictive Analytics',
+      description: 'Agriculture, climate, and environmental forecasting with scenario analysis.',
     },
   ]
 
   const experience = [
     {
-      role: 'Senior Data Analyst / Information Management Officer III',
-      organization: 'International Centre of Insect Physiology & Ecology (icipe)',
+      role: 'Senior Data Analyst and Consultant (Information Management Officer III/ M&E Officer II)',
+      organization: 'The International Centre of Insect Physiology & Ecology (icipe)',
       period: 'October 2022 – Present',
       achievements: [
-        'Led integration of MEL and BI systems for 10+ programs, improving data-driven decision-making',
-        'Designed Power BI/Tableau dashboards driving 25-30% gains in program effectiveness',
-        'Built data pipelines and governance frameworks with 30% improvement in data security',
-        'Mentored MEL team members and facilitated capacity-building workshops'
+        'Created and sustained complex data models facilitating strategic decision-making, enhancing data integrity and accessibility across business and development functions',
+        'Created and implemented interactive dashboards with Power BI and Tableau providing 25% increase in key performance indicators (KPIs)',
+        'Utilized statistical analysis and predictive modelling to highlight trends leading to 20-30% improvement in operational efficiency and stakeholder engagement',
+        'Managed scalable Data Management strategy enhancing data availability to over 116,000 youth and 11,000 businesses, resulting in 25% expansion in program engagement',
+        'Developed and managed Data Management Platform for the MOYESH Programme and leading National Apiculture Database for the MaYEA Programme',
+        'Generated over 30 knowledge products leading to 20% increase in evidence-based decision-making and stakeholder alignment'
       ]
     },
     {
-      role: 'Consultant – AI Ecosystem Study',
-      organization: 'KPIS Consultancy',
-      period: 'November 2024',
-      achievements: [
-        'Conducted scenario planning and strategic forecasts for AI adoption in Ethiopia',
-        'Developed 45-page national analysis influencing government policy'
-      ]
-    },
-    {
-      role: 'Data Analytics & Visualization Consultant',
+      role: 'Consultant',
       organization: 'DAB Development Research and Training PLC',
       period: 'September 2024',
       achievements: [
-        'Created data collection and visualization systems using Power BI & Microsoft Forms',
-        'Trained MEL staff in data analytics and reporting using Power BI and KoboToolbox'
+        'Created data visualizations and dashboards using Power BI and other tools tracking key outputs of the PROSEAD program',
+        'Tested and validated data visualizations with the DAB MEL team ensuring data accuracy and consistency',
+        'Provided half-day training sessions on Power BI and data analysis tools (Survey Solution, KOBO Toolbox)',
+        'Continued technical support and troubleshooting to ensure optimal use of data analysis tools'
       ]
     },
     {
@@ -95,49 +90,74 @@ export default function About() {
       organization: 'Azmera Technologies',
       period: 'January 2022 – Present',
       achievements: [
-        'Directed AI-driven platform development (AI FARMS) supporting climate-smart agriculture',
-        'Designed scalable data systems for sustainable market access and decision intelligence',
-        'Leading Agri-Tech innovation with goal to increase crop productivity by 10% in 2027',
-        'Developing disease detection platform and data-driven supply distribution systems'
+        'Headed creation of AI FARMS, an award-winning Agri-tech platform promoting stakeholders across supply chains through AI-enabled climate-smart farming',
+        'Designed solutions for market clarity, resource utilization, and sustainable agricultural practices',
+        'Won UNDP and LG-KOICA sponsored competition with $5,000 grant and state and National Competition first place'
       ]
     },
     {
-      role: 'Head of ICT Department',
+      role: 'Department Head',
       organization: 'Entoto Polytechnic College',
       period: 'October 2020 – September 2022',
       achievements: [
-        'Integrated KPI tracking systems improving operational metrics by 30%',
-        'Developed digital platforms aligned with Balanced Scorecard framework',
-        'Led cross-departmental M&E data initiatives and mentored 20+ data staff'
+        'Managed and implemented ICT systems while maintaining data management tools enhancing system performance',
+        'Monitored all KPIs to assess system performance, resource utilization, and operational efficiency',
+        'Collaborated with internal teams and external stakeholders to roll-out data-driven ICT systems',
+        'Implemented AI-enabled Plant Disease Detection System contributing to 40% increase in crop yield'
+      ]
+    },
+    {
+      role: 'IT Support Specialist (Part-time)',
+      organization: 'App\'s mason IT Solutions',
+      period: 'June 2016 - May 2019',
+      achievements: [
+        'Oversaw network installation and provided technical support to clients for successful ICT Systems',
+        'Fixed hardware and software problems improving clients\' system downtime by 20%',
+        'Developed materials detailing troubleshooting and use of software decreasing support needs by 25%',
+        'Created upgrades and patches improving system security resulting in 15% decrease in faults'
+      ]
+    },
+    {
+      role: 'Instructor',
+      organization: 'Entoto Polytechnic College',
+      period: '2012 – 2020',
+      achievements: [
+        'Created and implemented ICT-based data systems enhancing collections and improving student participation by 30%',
+        'Facilitated staff and student training sessions on data management processes improving digital competency by 20%',
+        'Managed technology initiatives for integrated use improving curriculum delivery and achieving 15% improved learning outcomes',
+        'Oversaw student-led ICT innovation projects providing data-driven mentorship approach'
       ]
     }
   ]
 
   const education = [
     {
-      degree: 'MSc in Computer Science',
+      degree: 'Master\'s degree in Computer Science',
       institution: 'Ambo University',
-      year: '2020'
+      year: '2022'
     },
     {
-      degree: 'BSc in Computer Science',
+      degree: 'Bachelor\'s degree in Computer Science',
       institution: 'Addis Ababa University',
-      year: '2012'
+      year: '2017'
     },
     {
-      degree: 'Diploma in IT',
-      institution: 'Nifas-Silk Polytechnic College',
-      year: '2009'
+      degree: 'Diploma in Information Technology',
+      institution: 'Nifas-silk Polytechnic College',
+      year: '2011'
     }
   ]
 
   const certifications = [
-    'Data Science & Machine Learning',
+    'Data Science and Machine Learning',
     'Data Analysis with Python and R',
-    'GIS and Geospatial Analytics',
-    'Evaluation for Resilience | Project Cycle Management',
-    'SQL Optimization & Advanced Python',
-    'Fundraising & Strategic Communication – Philanthropy University'
+    'GIS and Geospatial Analysis',
+    'Project Cycle Management',
+    'Evaluation for Resilience',
+    'Fundraising Specialization – Philanthropy University',
+    'Advanced training in SQL optimization and Python programming',
+    'Cloud computing technologies and data governance best practices',
+    'Applied Data Science at World Quant University (In Progress)'
   ]
 
   const socialLinks = [
@@ -148,7 +168,7 @@ export default function About() {
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/kalabemulugeta',
+      href: 'https://github.com/LijKal-codes',
       icon: Github,
     },
     {

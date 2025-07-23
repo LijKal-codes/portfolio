@@ -8,13 +8,13 @@ import ThemeProvider from '@/components/ThemeProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kalabe Mulugeta Abegaz | Senior Data Analyst & Data Systems Consultant',
-  description: 'Portfolio of Kalabe Mulugeta Abegaz, showcasing 14+ years in digital transformation, GIS, AI automation, and strategic data leadership.',
-  keywords: 'data analyst, data management, GIS, automation, AI, ICT leadership, Ethiopia',
+  title: 'Kalabe Mulugeta Abegaz | Senior Data Analyst & MEAL Professional',
+  description: 'Dynamic Data & Information Management & MEAL Professional with 14+ years of experience in data analysis, monitoring and evaluation, business intelligence, and IT consulting.',
+  keywords: 'senior data analyst, MEAL professional, data management, business intelligence, Power BI, Tableau, Python, GIS, icipe, Ethiopia',
   authors: [{ name: 'Kalabe Mulugeta Abegaz' }],
   openGraph: {
-    title: 'Kalabe Mulugeta Abegaz | Senior Data Analyst & Data Systems Consultant',
-    description: 'Portfolio of Kalabe Mulugeta Abegaz, showcasing 14+ years in digital transformation, GIS, AI automation, and strategic data leadership.',
+    title: 'Kalabe Mulugeta Abegaz | Senior Data Analyst & MEAL Professional',
+    description: 'Dynamic Data & Information Management & MEAL Professional with 14+ years of experience in data analysis, monitoring and evaluation, business intelligence, and IT consulting.',
     type: 'website',
   },
 }

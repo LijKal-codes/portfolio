@@ -4,19 +4,29 @@ import { motion } from 'framer-motion'
 import { ExternalLink, Sparkles, Zap } from 'lucide-react'
 
 interface ProjectCardProps {
-  title: string
-  role: string
-  tech: string[]
-  description: string
-  index: number
+  project: {
+    id: string
+    title: string
+    category: string
+    techStack: string[]
+    description: string
+    impact: string
+    duration: string
+    role: string
+    organization: string
+    highlights: string[]
+    image: string
+    link: string
+    github: string
+  }
 }
 
-export default function ProjectCard({ title, role, tech, description, index }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
+      transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       className="group relative"
     >
@@ -43,10 +53,10 @@ export default function ProjectCard({ title, role, tech, description, index }: P
               </motion.div>
               <div>
                 <h3 className="text-xl font-bold text-white group-hover:neon-text transition-all duration-300">
-                  {title}
+                  {project.title}
                 </h3>
                 <p className="text-primary-400 font-medium text-sm">
-                  {role}
+                  {project.role}
                 </p>
               </div>
             </div>
@@ -60,28 +70,36 @@ export default function ProjectCard({ title, role, tech, description, index }: P
 
           {/* Description */}
           <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-            {description}
+            {project.description}
           </p>
 
-          {/* Tech stack */}
+          {/* Project details */}
           <div className="space-y-3">
-            <div className="flex items-center space-x-2">
-              <Zap size={16} className="text-primary-400" />
-              <span className="text-sm font-medium text-primary-400">Technologies</span>
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-primary-400 font-medium">Impact: {project.impact}</span>
+              <span className="text-gray-400">{project.duration}</span>
             </div>
-            <div className="flex flex-wrap gap-2">
-              {tech.map((technology, techIndex) => (
-                <motion.span
-                  key={technology}
-                  className="px-3 py-1 text-xs font-medium glass border border-primary-500/30 text-primary-300 rounded-full"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: techIndex * 0.1 }}
-                  whileHover={{ scale: 1.05, backgroundColor: 'rgba(14, 165, 233, 0.1)' }}
-                >
-                  {technology}
-                </motion.span>
-              ))}
+            
+            {/* Tech stack */}
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Zap size={16} className="text-primary-400" />
+                <span className="text-sm font-medium text-primary-400">Technologies</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {project.techStack.map((technology, techIndex) => (
+                  <motion.span
+                    key={technology}
+                    className="px-3 py-1 text-xs font-medium glass border border-primary-500/30 text-primary-300 rounded-full"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: techIndex * 0.1 }}
+                    whileHover={{ scale: 1.05, backgroundColor: 'rgba(14, 165, 233, 0.1)' }}
+                  >
+                    {technology}
+                  </motion.span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

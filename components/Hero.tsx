@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Download, Eye, Sparkles, Zap, Leaf, Heart, TrendingUp, Map } from 'lucide-react'
+import { ArrowRight, Download, Eye, Sparkles, Zap, Leaf, Heart, TrendingUp, Map, BarChart3 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export default function Hero() {
@@ -67,7 +67,7 @@ export default function Hero() {
                 className="flex items-center space-x-2 text-primary-400"
               >
                 <Leaf size={20} className="animate-pulse" />
-                <span className="text-sm font-medium tracking-wider uppercase">Agri-Tech Innovator</span>
+                <span className="text-sm font-medium tracking-wider uppercase">Tech Expert, BI Developer, Data Analyst & Consultant</span>
               </motion.div>
               
               <motion.h1
@@ -86,7 +86,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-xl md:text-2xl text-primary-400 font-semibold neon-text"
               >
-                Tech Professional & Agri-Tech Founder
+                Transforming Data into Strategic Insights & Innovation
               </motion.h2>
               
               <motion.p
@@ -95,7 +95,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-lg text-gray-300 leading-relaxed"
               >
-                Driving food security through AI technology
+                Dynamic Data & Information Management & MEAL Professional with 14 years of experience
               </motion.p>
             </div>
 
@@ -105,9 +105,9 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-gray-400 leading-relaxed"
             >
-              Experienced Tech professional with a master's degree in computer science. Proficient in data analytics, 
-              visualization, and BI software. Over 14+ years of hands-on experience in data collection, analysis, 
-              and visualization. Founder of Azmera Technologies, passionate about ensuring food security through technology.
+              Expert in developing and implementing effective data systems, dashboards, and cloud-based applications. 
+              Extensive skills in advanced SQL, Power BI, Tableau, Python, and GIS. Strong understanding of 
+              Monitoring and Evaluation frameworks, data validation workflows, and production-level data modeling.
             </motion.p>
 
             {/* Key Achievements */}
@@ -118,12 +118,12 @@ export default function Hero() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="glass rounded-xl p-4 border border-primary-500/30">
-                <div className="text-2xl font-bold text-primary-400">10%</div>
-                <div className="text-sm text-gray-300">Crop Productivity Goal by 2027</div>
+                <div className="text-2xl font-bold text-primary-400">25%</div>
+                <div className="text-sm text-gray-300">KPI Improvement</div>
               </div>
               <div className="glass rounded-xl p-4 border border-primary-500/30">
-                <div className="text-2xl font-bold text-primary-400">6%</div>
-                <div className="text-sm text-gray-300">AI Farms Productivity Target</div>
+                <div className="text-2xl font-bold text-primary-400">40%</div>
+                <div className="text-sm text-gray-300">Agricultural Yield Increase</div>
               </div>
             </motion.div>
 
@@ -138,18 +138,54 @@ export default function Hero() {
                 <div className="flex items-center space-x-3 mb-3">
                   <Heart size={20} className="text-primary-400 animate-pulse" />
                   <div>
-                    <div className="text-sm font-medium text-primary-400">Current Projects</div>
+                    <div className="text-sm font-medium text-primary-400">Current Role</div>
+                    <div className="text-white font-semibold">icipe - Senior Data Analyst</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="flex items-center space-x-2">
+                    <Leaf size={12} className="text-primary-400" />
+                    <span className="text-gray-300">MOYESH Program</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <TrendingUp size={12} className="text-primary-400" />
+                    <span className="text-gray-300">MaYEA Database</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Map size={12} className="text-primary-400" />
+                    <span className="text-gray-300">GIS</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <BarChart3 size={12} className="text-primary-400" />
+                    <span className="text-gray-300">Data Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Projects Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="space-y-4"
+            >
+              <div className="glass rounded-xl p-4 border border-primary-500/30">
+                <div className="flex items-center space-x-3 mb-3">
+                  <Sparkles size={20} className="text-primary-400 animate-pulse" />
+                  <div>
+                    <div className="text-sm font-medium text-primary-400">Featured Projects</div>
                     <div className="text-white font-semibold">Active Development</div>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div className="flex items-center space-x-2">
                     <Leaf size={12} className="text-primary-400" />
-                    <span className="text-gray-300">AI Farms</span>
+                    <span className="text-gray-300">AI FARMS</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <TrendingUp size={12} className="text-primary-400" />
-                    <span className="text-gray-300">WEYE</span>
+                    <span className="text-gray-300">WEYE Platform</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Heart size={12} className="text-primary-400" />

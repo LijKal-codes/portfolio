@@ -34,7 +34,7 @@ export default function Trainings() {
       outcomes: [
         'Create professional dashboards',
         'Implement KPI tracking systems',
-        'Drive 25-30% program effectiveness gains',
+        'Drive 25% increase in KPIs',
         'Enable data-driven decision making'
       ]
     },
@@ -43,20 +43,20 @@ export default function Trainings() {
       title: 'GIS & Spatial Analytics',
       duration: '4-6 Days',
       level: 'Beginner to Advanced',
-      description: 'Master QGIS and ArcGIS for spatial data analysis, remote sensing, and agricultural mapping applications.',
+      description: 'Master QGIS and ArcGIS for spatial data analysis, remote sensing, and satellite imagery processing for climate resilience.',
       topics: [
         'QGIS fundamentals and interface',
         'Spatial data analysis techniques',
         'Remote sensing applications',
-        'Agricultural mapping and analysis',
-        'Resource distribution modeling',
+        'Satellite imagery processing',
+        'Climate resilience mapping',
         'GIS platform integration'
       ],
       outcomes: [
         'Conduct spatial data analysis',
-        'Create agricultural mapping solutions',
+        'Process satellite imagery',
         'Integrate GIS with existing systems',
-        'Support location-based decision making'
+        'Support climate resilience decision making'
       ]
     },
     {
@@ -64,127 +64,85 @@ export default function Trainings() {
       title: 'Data Science with Python & R',
       duration: '5-7 Days',
       level: 'Intermediate to Advanced',
-      description: 'Comprehensive data science training covering Python, R, and Stata for machine learning, predictive modeling, and agricultural applications.',
+      description: 'Comprehensive data science training covering Python (Pandas, NumPy), R, regression, clustering, and time-series forecasting.',
       topics: [
-        'Python for data analysis',
+        'Python for data analysis (Pandas, NumPy)',
         'R programming fundamentals',
-        'Machine learning algorithms',
+        'Regression and clustering analysis',
+        'Time-series forecasting',
         'Predictive modeling techniques',
-        'Plant disease detection models',
-        'Yield optimization analytics'
+        'Agricultural and climate applications'
       ],
       outcomes: [
-        'Build ML models for agriculture',
-        'Improve yield by 40% through AI',
-        'Implement predictive analytics',
+        'Build predictive models',
+        'Implement time-series forecasting',
+        'Apply ML to agriculture and climate',
         'Develop data science workflows'
       ]
     },
     {
-      icon: TrendingUp,
-      title: 'Workflow Automation',
+      icon: Zap,
+      title: 'Advanced SQL & Data Modeling',
       duration: '3-4 Days',
       level: 'Intermediate to Advanced',
-      description: 'Training on workflow automation tools and techniques to streamline business processes and improve operational efficiency.',
+      description: 'Training on advanced SQL techniques, dbt-style data modeling, and cloud-based data management systems.',
       topics: [
-        'Workflow automation fundamentals',
-        'Power Automate and Microsoft Flow',
-        'Process mapping and optimization',
-        'Automation tool selection',
-        'Integration with existing systems',
-        'Monitoring and maintenance'
+        'Advanced SQL (joins, CTEs, window functions)',
+        'dbt-style data modeling',
+        'Cloud-based data management',
+        'Database design and administration',
+        'ETL pipeline development',
+        'Data quality assurance'
       ],
       outcomes: [
-        'Design and implement automated workflows',
-        'Optimize business processes',
-        'Integrate automation tools',
-        'Improve operational efficiency'
-      ]
-    },{
-      icon: Award,
-      title: 'Digital Literacy and Digital Safety',
-      duration: '3-4 Days',
-      level: 'Beginner to Intermediate',
-      description: 'Comprehensive training on digital literacy, online safety, and cybersecurity best practices for organizations and individuals.',
-      topics: [
-        'Digital literacy fundamentals',
-        'Online safety and privacy protection',
-        'Cybersecurity best practices',
-        'Data protection and GDPR awareness',
-        'Safe internet browsing techniques',
-        'Digital communication skills'
-      ],
-      outcomes: [
-        'Develop essential digital literacy skills',
-        'Implement online safety protocols',
-        'Protect personal and organizational data',
-        'Navigate digital platforms safely'
+        'Master advanced SQL techniques',
+        'Implement dbt-style data modeling',
+        'Design cloud-based data systems',
+        'Ensure data quality and integrity'
       ]
     },
     {
       icon: Database,
-      title: 'MEL Systems & Data Collection',
-      duration: '3-4 Days',
-      level: 'Beginner to Intermediate',
-      description: 'Training on monitoring, evaluation, and learning systems using SurveyCTO, Kobo, and DHIS2 platforms.',
-      topics: [
-        'MEL system design principles',
-        'SurveyCTO and Kobo setup',
-        'DHIS2 configuration and management',
-        'Data collection best practices',
-        'Real-time monitoring dashboards',
-        'Impact assessment methodologies'
-      ],
-      outcomes: [
-        'Design effective MEL systems',
-        'Implement data collection platforms',
-        'Create real-time monitoring solutions',
-        'Conduct impact assessments'
-      ]
-    },
-    {
-      icon: Zap,
-      title: 'Data Governance & Compliance',
-      duration: '2-3 Days',
+      title: 'MEAL Systems & Data Validation',
+      duration: '4-5 Days',
       level: 'Intermediate to Advanced',
-      description: 'Comprehensive training on data governance, GDPR/PII compliance, and security frameworks with 30% improvement focus.',
+      description: 'Comprehensive training on Monitoring, Evaluation, Accountability, and Learning (MEAL) systems with data validation workflows.',
       topics: [
-        'Data governance frameworks',
-        'GDPR and PII compliance',
-        'ETL pipeline development',
-        'Data modeling and architecture',
-        'Security framework implementation',
-        'Audit trail management'
+        'MEAL framework development',
+        'Data validation workflows',
+        'Production-level data modeling',
+        'Stakeholder engagement',
+        'Impact assessment methodologies',
+        'Real-time monitoring systems'
       ],
       outcomes: [
-        'Implement data governance policies',
-        'Ensure GDPR/PII compliance',
-        'Build secure data pipelines',
-        'Achieve 30% security improvements'
+        'Develop MEAL frameworks',
+        'Implement data validation processes',
+        'Create production-level data models',
+        'Build stakeholder engagement systems'
       ]
     },
     {
       icon: Users,
-      title: 'Team Leadership & Capacity Building',
-      duration: '2-4 Days',
-      level: 'Management Level',
-      description: 'Leadership training for data teams, mentoring strategies, and capacity building to achieve 40% analytics adoption improvement.',
+      title: 'Strategic Leadership & Capacity Building',
+      duration: '3-4 Days',
+      level: 'Intermediate to Advanced',
+      description: 'Training on strategic leadership, capacity building, and cross-functional team management in data-driven environments.',
       topics: [
-        'Cross-functional team leadership',
-        'Mentoring and coaching strategies',
-        'Change management techniques',
-        'Data culture development',
-        'Institutional learning frameworks',
-        'Performance optimization'
+        'Strategic leadership principles',
+        'Capacity building methodologies',
+        'Cross-functional team management',
+        'Technical training delivery',
+        'Change management strategies',
+        'Data-driven decision making'
       ],
       outcomes: [
-        'Lead high-performing data teams',
-        'Mentor 20+ staff effectively',
-        'Drive 40% analytics adoption',
-        'Foster data-driven culture'
+        'Lead cross-functional teams',
+        'Implement capacity building programs',
+        'Deliver technical training',
+        'Drive data-driven organizational change'
       ]
     }
-
   ]
 
   const trainingApproach = [
