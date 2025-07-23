@@ -254,7 +254,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Business Intelligence */}
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-primary-400 text-center">Business Intelligence</h3>
@@ -274,6 +274,17 @@ export default function Home() {
                 <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">R</span>
                 <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">Stata</span>
                 <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">SQL</span>
+              </div>
+            </div>
+
+            {/* Data Collection */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-bold text-primary-400 text-center">Data Collection</h3>
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">KOBO Toolbox</span>
+                <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">CSPro</span>
+                <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">ODK</span>
+                <span className="px-3 py-1 text-sm glass border border-primary-500/30 rounded-full text-gray-300">CommCare</span>
               </div>
             </div>
 

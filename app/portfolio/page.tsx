@@ -222,7 +222,7 @@ export default function Portfolio() {
       github: '#'
     },
     {
-      id: 'lesua-motherlink',
+      id: 'lesua',
       title: 'LESUA – Smart Pregnancy Companion Platform',
       category: 'systems',
       techStack: ['Node.js', 'PostgreSQL', 'Mobile App Development', 'Web Development', 'RESTful API', 'Google OAuth'],
