@@ -17,7 +17,8 @@ import {
   Heart,
   Code,
   Leaf,
-  ArrowRight
+  ArrowRight,
+  FileText
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -39,6 +40,16 @@ export default function About() {
       description: 'Python (Pandas, NumPy), R, regression, clustering, time-series forecasting for predictive analytics.',
     },
     {
+      icon: Code,
+      title: 'Software Development',
+      description: 'Full-stack development, web applications, mobile apps, and custom software solutions for business needs.',
+    },
+    {
+      icon: Bot,
+      title: 'Prompt Engineering',
+      description: 'Advanced AI prompt design, LLM optimization, and AI system integration for enhanced productivity.',
+    },
+    {
       icon: Zap,
       title: 'Data Infrastructure & ETL',
       description: 'Advanced SQL (joins, CTEs, window functions), dbt-style data modeling, cloud-based systems.',
@@ -47,6 +58,11 @@ export default function About() {
       icon: Database,
       title: 'MEL Systems & Platforms',
       description: 'Data validation workflows, production-level data modeling, stakeholder engagement.',
+    },
+    {
+      icon: FileText,
+      title: 'Data Collection & Survey Design',
+      description: 'KOBO Toolbox, CSPro, ODK, CommCare questionnaire design and mobile data collection systems.',
     },
     {
       icon: Users,

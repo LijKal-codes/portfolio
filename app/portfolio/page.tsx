@@ -43,8 +43,8 @@ export default function Portfolio() {
       id: 'moyesh',
       title: 'MOYESH Program - Data Management Platform',
       category: 'data-analytics',
-      techStack: ['Power BI', 'Tableau', 'Advanced SQL', 'Python', 'Data Modeling'],
-      description: 'Created and sustained complex data models facilitating strategic decision-making. Developed interactive dashboards with Power BI and Tableau providing 25% increase in KPIs. Managed scalable Data Management strategy enhancing data availability to 116,000+ youth and 11,000+ businesses.',
+      techStack: ['Power BI', 'Tableau', 'Advanced SQL', 'Python', 'Data Modeling', 'KOBO Toolbox', 'ODK', 'CSPro'],
+      description: 'Created and sustained complex data models facilitating strategic decision-making. Developed interactive dashboards with Power BI and Tableau providing 25% increase in KPIs. Managed scalable Data Management strategy including data collection systems using KOBO Toolbox, ODK, and CSPro, enhancing data availability to 116,000+ youth and 11,000+ businesses.',
       impact: '25% KPI Increase',
       duration: '2022-2024',
       role: 'Senior Data Analyst',
@@ -53,7 +53,8 @@ export default function Portfolio() {
         'Created complex data models for strategic decision-making',
         'Developed interactive dashboards with Power BI and Tableau',
         'Managed scalable Data Management strategy',
-        'Enhanced data availability to 116,000+ youth and 11,000+ businesses'
+        'Enhanced data availability to 116,000+ youth and 11,000+ businesses',
+        'Implemented data collection systems with KOBO Toolbox, ODK, and CSPro'
       ],
       image: '',
       link: '#',
@@ -183,8 +184,8 @@ export default function Portfolio() {
       id: 'prosead',
       title: 'PROSEAD Program - Data Visualization & Reporting',
       category: 'data-analytics',
-      techStack: ['Power BI', 'Microsoft Forms', 'Data Validation', 'Training'],
-      description: 'Created data visualizations and dashboards using Power BI and other tools tracking key outputs of the PROSEAD program. Provided training sessions on Power BI and data analysis tools.',
+      techStack: ['Power BI', 'Microsoft Forms', 'Data Validation', 'Training', 'KOBO Toolbox', 'Survey Solution'],
+      description: 'Created data visualizations and dashboards using Power BI and other tools tracking key outputs of the PROSEAD program. Provided training sessions on Power BI, data analysis tools, Survey Solution, and KOBO Toolbox for comprehensive data collection and analysis.',
       impact: 'Enhanced Data Visibility',
       duration: '2024',
       role: 'Data Analytics Consultant',
@@ -193,7 +194,88 @@ export default function Portfolio() {
         'Created data visualizations and dashboards',
         'Tracked key outputs of PROSEAD program',
         'Provided training on Power BI and data tools',
-        'Technical support and troubleshooting'
+        'Technical support and troubleshooting',
+        'Training on Survey Solution and KOBO Toolbox'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'linkup-addis',
+      title: 'Linkup Addis – Smart Matchmaking Telegram Bot',
+      category: 'ai-ml',
+      techStack: ['Python', 'Aiogram 3.x', 'PostgreSQL', 'Telegram API', 'Asynchronous Programming', 'FSM'],
+      description: 'Location-based matchmaking bot built for Telegram, tailored to help users in Ethiopia connect meaningfully through shared interests, proximity, and profile compatibility. Features user registration, location-aware matching, smart like/dislike system, subscription management, and admin panel.',
+      impact: 'Smart Matchmaking Platform',
+      duration: '2023-2024',
+      role: 'Full-Stack Developer & Bot Architect',
+      organization: 'Azmera Technologies',
+      highlights: [
+        'Built location-based matchmaking system with Telegram integration',
+        'Implemented user registration with live location sharing',
+        'Developed subscription management with payment verification',
+        'Created comprehensive admin panel for platform management'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'lesua-motherlink',
+      title: 'LESUA – Smart Pregnancy Companion Platform',
+      category: 'systems',
+      techStack: ['Node.js', 'PostgreSQL', 'Mobile App Development', 'Web Development', 'RESTful API', 'Google OAuth'],
+      description: 'Integrated digital health platform designed to support expectant mothers and their partners throughout the pregnancy journey. Comprises mobile app, web portal, and admin panel with personalized pregnancy tracking, expert health tips, appointment booking, and maternity product store.',
+      impact: 'Digital Health Innovation',
+      duration: '2023-2024',
+      role: 'Full-Stack Developer & Platform Architect',
+      organization: 'Azmera Technologies',
+      highlights: [
+        'Developed comprehensive pregnancy tracking platform',
+        'Built mobile and web apps with synchronized partner features',
+        'Integrated appointment booking with location-based hospital recommendations',
+        'Created admin panel for platform management and analytics'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'liyu-eta',
+      title: 'LiYU ETA – Ethiopia\'s Trusted Telegram Lottery Bot',
+      category: 'ai-ml',
+      techStack: ['Telegram Bot Development', 'Payment Integration', 'Prize Management', 'User Engagement', 'Security'],
+      description: 'Secure and fun Telegram-based prize draw platform where users can win real rewards like electronics, home appliances, and cash by buying tickets and inviting friends. Features transparent ticket-based draws, payment verification, and 24/7 support.',
+      impact: 'Entertainment Platform',
+      duration: '2023-2024',
+      role: 'Bot Developer & Platform Manager',
+      organization: 'Azmera Technologies',
+      highlights: [
+        'Built secure lottery platform with Telegram integration',
+        'Implemented payment verification system with Telebirr integration',
+        'Developed transparent ticket-based prize draw system',
+        'Created user engagement features with invite-to-earn program'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'data-collection-surveys',
+      title: 'Data Collection & Survey Design Expertise',
+      category: 'systems',
+      techStack: ['KOBO Toolbox', 'CSPro', 'ODK', 'CommCare', 'Survey Design', 'Mobile Data Collection'],
+      description: 'Expert in designing comprehensive data collection questionnaires and mobile data collection systems using KOBO Toolbox, CSPro, ODK, and CommCare. Created surveys for agricultural research, program monitoring, and impact assessment across multiple development projects.',
+      impact: 'Enhanced Data Quality',
+      duration: '2020-2024',
+      role: 'Survey Design Specialist & Data Collection Expert',
+      organization: 'Multiple Organizations',
+      highlights: [
+        'Designed questionnaires for agricultural research and program monitoring',
+        'Implemented mobile data collection systems with offline capabilities',
+        'Created data validation and quality control mechanisms',
+        'Provided training on survey tools and data collection best practices'
       ],
       image: '',
       link: '#',
