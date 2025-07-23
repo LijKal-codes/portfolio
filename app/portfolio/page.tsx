@@ -101,19 +101,59 @@ export default function Portfolio() {
     },
     {
       id: 'ai-ethiopia',
-      title: 'AI in Ethiopia Study - National Analysis',
+      title: 'Department Head, CTO & Tech Team Lead',
       category: 'leadership',
-      techStack: ['Research Analysis', 'Strategic Planning', 'Policy Development'],
-      description: 'Produced in-depth analysis of Ethiopia\'s AI ecosystem, influencing national AI development strategies. Conducted scenario planning and strategic forecasts for AI adoption in Ethiopia.',
-      impact: 'Policy Influence',
-      duration: '2024',
-      role: 'Consultant',
-      organization: 'KPIS Consultancy',
+      techStack: ['Strategic Leadership', 'Technical Management', 'Team Leadership', 'Project Management'],
+      description: 'Department Head at Entoto Polytechnic College, CTO at Fettan Solutions, and Tech Team Lead on Fast Park project. Leading cross-functional teams, managing technical operations, and driving innovation across multiple organizations.',
+      impact: 'Leadership Excellence',
+      duration: '2020-2024',
+      role: 'Department Head / CTO / Tech Team Lead',
+      organization: 'Entoto Polytechnic College / Fettan Solutions / Fast Park',
       highlights: [
-        'Developed 45-page national analysis',
-        'Influenced government policy on AI development',
-        'Conducted scenario planning and strategic forecasts',
-        'Strategic analysis of AI adoption in Ethiopia'
+        'Department Head managing ICT systems and operations',
+        'CTO at Fettan Solutions driving technical strategy',
+        'Tech Team Lead on Fast Park project development',
+        'Cross-functional team leadership and capacity building'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'moyesh-systems',
+      title: 'MOYESH Program - DMS Platform & Administration',
+      category: 'systems',
+      techStack: ['Database Management', 'Web Administration', 'SMS Platform', 'System Administration', 'Data Security'],
+      description: 'Developed and administered MOYESH Program Data Management System (DMS) platform, managed program website administration, and oversaw BULK SMS platform administration for program communications.',
+      impact: 'Enhanced Program Operations',
+      duration: '2022-2024',
+      role: 'System Administrator & Platform Manager',
+      organization: 'International Centre of Insect Physiology & Ecology (icipe)',
+      highlights: [
+        'Developed and maintained MOYESH Program DMS platform',
+        'Managed program website administration and updates',
+        'Administered BULK SMS platform for program communications',
+        'Ensured data security and system reliability'
+      ],
+      image: '',
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 'gis-moyesh-mayea',
+      title: 'GIS & Remote Sensing - MOYESH & MaYEA Projects',
+      category: 'gis',
+      techStack: ['QGIS', 'ArcGIS', 'Remote Sensing', 'Spatial Analysis', 'Intervention Mapping', 'Satellite Imagery'],
+      description: 'Created comprehensive maps for intervention areas for MOYESH and MaYEA projects. Conducted detailed geospatial analysis for MaYEA project including spatial data processing, remote sensing applications, and intervention area mapping.',
+      impact: 'Enhanced Spatial Decision Making',
+      duration: '2022-2024',
+      role: 'GIS Specialist & Spatial Analyst',
+      organization: 'International Centre of Insect Physiology & Ecology (icipe)',
+      highlights: [
+        'Created intervention area maps for MOYESH project',
+        'Developed spatial analysis for MaYEA project',
+        'Applied remote sensing techniques for area mapping',
+        'Enhanced spatial decision-making capabilities'
       ],
       image: '',
       link: '#',
@@ -169,6 +209,7 @@ export default function Portfolio() {
     { label: 'Projects Completed', value: '30+' },
     { label: 'Years Experience', value: '14+' },
     { label: 'Team Members Led', value: '30+' },
+    { label: 'Trainings Conducted', value: '100+' },
   ]
 
   return (
